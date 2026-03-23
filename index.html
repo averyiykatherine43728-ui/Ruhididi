@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>For Ruhi Di</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background: black;
+            color: white;
+            font-family: Arial;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .container {
+            max-width: 400px;
+        }
+
+        h1 {
+            font-size: 30px;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+
+        p {
+            opacity: 0;
+            animation: fadeIn 3s forwards;
+            animation-delay: 1s;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: 1px solid white;
+            background: transparent;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: white;
+            color: black;
+        }
+
+        #hiddenMessage {
+            display: none;
+            margin-top: 20px;
+            animation: fadeIn 2s;
+        }
+
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+    </style>
+
+    <script>
+        function showMessage() {
+            document.getElementById("hiddenMessage").style.display = "block";
+        }
+    </script>
+
+</head>
+
+<body>
+
+<div class="container">
+    <h1>For Ruhi Di</h1>
+
+    <p>I don't always say this...</p>
+
+    <button onclick="showMessage()">Click</button>
+
+    <div id="hiddenMessage">
+        <p>
+        But you mean a lot to me.<br><br>
+        You are my strength, my support, and my safe place.<br><br>
+        Thank you for always being there.
+        </p>
+    </div>
+</div>
+
+</body>
+</html>
